@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 
 <head>
@@ -8,15 +8,16 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script defer src="fontawesome/js/all.js"></script>
-    <title>John Doe</title>
+    <title>Tina To</title>
     <style>
         html,
         body {
             height: 100%;
-            font-family: 'Merriweather Sans', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             scroll-behavior: smooth;
+            background-color: rgb(237, 233, 224);
         }
 
         .faded {
@@ -35,12 +36,11 @@
             border: 2px solid black;
             opacity: 0.5;
             transition: 0.3s;
-
         }
 
-        .btn-outline:hover {
-            opacity: 1;
-        }
+            .btn-outline:hover {
+                opacity: 1;
+            }
 
         .lang {
             height: 60px;
@@ -51,14 +51,14 @@
             font-size: 65px;
         }
 
-        .contacticon a {
-            color: rgb(33, 37, 41);
-        }
+            .contacticon a {
+                color: rgb(33, 37, 41);
+            }
 
         .course {
             margin: 0 10px;
             padding: 20px;
-            background-color: #eeeeee;
+            background-color: rgb(239, 165, 129);
             border-radius: 5px;
             display: flex;
             justify-content: center;
@@ -66,25 +66,38 @@
             align-items: center;
         }
 
-        .course h5 {
-            margin: 0;
-        }
+            .course h5 {
+                margin: 0;
+            }
 
         .next {
             font-size: 65px;
         }
 
-        .next a {
-            color: rgb(33, 37, 41);
+            .next a {
+                color: #0f2d28;
+            }
+
+        h6 {
+            color: #efa581;
+            font-weight: bold;
         }
+        .btn-link {
+            color: black;
+            font-weight: bold;
+        }
+            .btn-link:hover {
+                color: #efa581;
+            }
+
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#landing">John Doe<span class="sr-only">(current)</span></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#landing">Tina To<span class="sr-only">(current)</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -97,6 +110,9 @@
                     <a class="nav-link" href="#courses">Courses</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="#aboutMe">About Me</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
@@ -104,32 +120,42 @@
     </nav>
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="landing">
         <div class="row mx-auto">
-            <h4 class="display-4 font-weight-bold mx-auto text-center">Hello, I'm John!</h4>
+            <h4 class="display-4 font-weight-bold mx-auto text-center">Welcome to my page, I'm Tina!</h4>
         </div>
         <div class="row mx-auto">
-            <h5 class="display-5 mx-auto faded text-center">I'm an Information Science & Technology Student at Temple
-                University.</h5>
+            <h5 class="display-5 mx-auto faded text-center">
+                I'm an Information Science & Technology Student at Temple
+                University.
+            </h5>
+        </div>
+        <div class="row mx-auto">
+            <h6 class="display-6 mx-auto text-center">
+                Below are some of my technical skills
+            </h6>
         </div>
         <div class="row my-4">
-            <div class="col my-3"><img src="images/python.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Python" /></div>
-            <div class="col my-3"><img src="images/angular.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Angular" /></div>
-            <div class="col my-3"><img src="images/typescript.jpg" class="lang" data-toggle="tooltip"
-                    data-placement="top" title="TypeScript" /></div>
+            <div class="col my-3">
+                <img src="images/python.jpg" class="lang" data-toggle="tooltip" data-placement="top"
+                     title="Python" />
+            </div>
 
-            <div class="col my-3"><img src="images/csharp.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="C#" /></div>
-            <div class="col my-3"><img src="images/node.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Node.js" /></div>
-            <div class="col my-3"><img src="images/java.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Java" /></div>
+            <div class="col my-3">
+                <img src="images/csharp.jpg" class="lang" data-toggle="tooltip" data-placement="top"
+                     title="C#" />
+            </div>
+            <div class="col my-3">
+                <img src="images/java.jpg" class="lang" data-toggle="tooltip" data-placement="top"
+                     title="Java" />
+            </div>
 
-            <div class="col my-3"><img src="images/aspnet.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="ASP.NET" /></div>           
-                     <div class="col my-3"><img src="images/mssql.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Microsoft SQL Server" /></div> <div class="col my-3"><img src="images/mongodb.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="MongoDB" /></div>
+            <div class="col my-3">
+                <img src="images/aspnet.jpg" class="lang" data-toggle="tooltip" data-placement="top"
+                     title="ASP.NET" />
+            </div>
+            <div class="col my-3">
+                <img src="images/mssql.jpg" class="lang" data-toggle="tooltip" data-placement="top"
+                     title="Microsoft SQL Server" />
+            </div>
 
         </div>
         <div class="row my-4">
@@ -140,12 +166,18 @@
                 <a href="#courses"><button type="button" class="btn btn-outline">Courses</button></a>
             </div>
             <div class="col">
+                <a href=" #aboutMe"><button type="button" class="btn btn-outline">About Me</button></a>
+            </div>
+            <div class="col">
                 <a href="#contact"><button type="button" class="btn btn-outline">Contact</button></a>
             </div>
         </div>
         <div class="row mt-5 next">
-            <a href="#projects" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
-                    title="Projects"></i></a> </div>
+            <a href="#projects" class="col">
+                <i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                   title="Projects"></i>
+            </a>
+        </div>
 
     </div>
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="projects">
@@ -155,41 +187,67 @@
         <div class="row mx-auto">
             <h5 class="display-5 mx-auto faded text-center mb-4">I've worked on some neat things.</h5>
         </div>
-        <div class="row w-100">
-            <h5>Inspiro for Esperanza</h5>
+        <!--<div class="row w-100">
+        <h5>ATM Project</h5>
+    </div>-->
+        <div id="accordion">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                ATM Project
+            </button>
         </div>
-        <div class="row w-100 mb-4">
-            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus nisi
-                in neque blandit auctor. Vestibulum pellentesque fringilla nulla quis sagittis. Donec id erat
-                sodales, fringilla est non, vestibulum tellus. Suspendisse potenti. Fusce et dolor blandit,
-                tincidunt eros non, pharetra orci. Donec massa neque, suscipit at purus ac, cursus tincidunt
-                purus. Suspendisse imperdiet massa nec sem dictum luctus. Vestibulum at porta lectus, sed
-                faucibus libero. </p>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="row w-100 mb-4">
+                <p class="text-justify">
+                    I created an ATM machine in my CIS 3309 course. In this application you have
+                    the ability to view your checking or savings balance, withdraw from your checking or savings, deposit to your checking or savings, or
+                    transfer from checking to savings and vice versa. This project allowed our class to work with streamreaders
+                    and streamwriters
+                </p>
+            </div>
         </div>
-        <div class="row w-100">
-            <h5>Work From Home Pinterest</h5>
+        <div id="accordion">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Research Project: Improved publication system
+            </button>
         </div>
-        <div class="row w-100 mb-4">
-            <p class="text-justify">Vestibulum vulputate ullamcorper placerat. Fusce bibendum ligula non ex dapibus
-                finibus. Nulla facilisi. Integer eu libero lorem. Pellentesque eget pretium ligula. Donec finibus nibh
-                sed leo dapibus imperdiet. Fusce cursus eu mi sed porttitor. Aliquam eget suscipit dolor, ac mollis
-                risus. Vestibulum commodo turpis nulla, bibendum varius urna dictum porta. </p>
+        <!--<div class="row w-100">
+        <h5>Research Project: Improved publication system</h5>
+    </div>-->
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingtwo" data-parent="#accordion">
+            <div class="row w-100 mb-4">
+                <p class="text-justify">
+                    During the summer of 2019 I worked in a genomics lab as part of their technology team
+                    with Sudhir Kumar. Over the summer I learned php and web api to be able to work on the new project I was assigned to.
+                    The new publication system purpose was to make viewing and adding publications to their existing website simple. During the time
+                    their web design was messy and made it difficult for both students and researchers to use. The final product the team and I
+                    were able to make was a user friendly system that is easy to navigate and created a simple way for researchers to drop new papers to the website.
+                </p>
+            </div>
         </div>
-        <div class="row w-100">
-            <h5>Query Dating Site</h5>
+        <!--<div class="row w-100">
+        <h5>Email Management System</h5>
+    </div>-->
+        <div id="accordion">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Email Management System
+            </button>
         </div>
-        <div class="row w-100">
-            <p class="text-justify">Fusce egestas lectus ac est porttitor congue. Mauris lacinia pharetra odio ut
-                egestas. Nullam facilisis condimentum consequat. Integer arcu nibh, ullamcorper non fringilla quis,
-                tempus sit amet turpis. Proin ac gravida mi. Ut eros quam, pharetra venenatis pharetra at, porttitor sit
-                amet dolor. Ut et accumsan metus. Phasellus eros diam, tristique a maximus vel, fringilla eu nisl.
-                Pellentesque sed quam non urna dapibus porta in in nibh. Phasellus lobortis nibh est, id pretium orci
-                efficitur at. </p>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingtwo" data-parent="#accordion">
+            <div class="row w-100">
+                <p class="text-justify">
+                    I created a Email system in my CIS3342 course. It works very similar to outlook. In this application you have the ability to
+                    send emails, flag emails, delete emails, view emails, and create an account. There was also an admin view with additional
+                    things it can do such as banning and unbanning users.
+                </p>
+            </div>
         </div>
-        <div class="row mt-5 next">
-            <a href="#courses" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
-                    title="Courses"></i></a> </div>
-    </div>
+            <div class="row mt-5 next">
+                <a href="#courses" class="col">
+                    <i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                       title="Courses"></i>
+                </a>
+            </div>
+        </div>
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="courses">
         <div class="row mx-auto">
             <h4 class="display-4 font-weight-bold mx-auto text-center">Courses</h4>
@@ -221,46 +279,89 @@
                 <h5>Database Management Systems</h5>
             </div>
         </div>
+        <div class="row w-100 justify-content-center my-3">
+            <div class="col text-center course">
+                <h5>Math Concepts In Computing I</h5>
+            </div>
+            <div class="col text-center course">
+                <h5>Program Design and Abstraction</h5>
+            </div>
+        </div>
         <div class="row mt-5 next">
-            <a href="#contact" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
-                    title="Contact"></i></a> </div>
+            <a href="#aboutMe" class="col">
+                <i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                   title="About Me"></i>
+            </a>
+        </div>
     </div>
-    <div class="container landing d-flex justify-content-center flex-column align-items-center" id="contact">
-        <div class="row mx-auto">
-            <h4 class="display-4 font-weight-bold mx-auto text-center">Feel Like Reaching Out?</h4>
+        <div class="container landing d-flex justify-content-center flex-column align-items-center" id="aboutMe">
+            <div class="row mx-auto">
+                <h4 class="display-4 font-weight-bold mx-auto text-center">About Me</h4>
+            </div>
+            <div class="row mx-auto">
+                <h5 class="display-5 mx-auto faded text-center mb-4">Get to know me outside of school!</h5>
+            </div>
+            <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="images/Profile.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">
+                        Hey! I am currently a senior at Temple University. On my free time
+                        I enjoy hanging out with my friends as I don't see them oftend :( but it is always a great time!
+                        I also enjoy spending time with my family as we are really close, and I hope to have a huge family trip soon :).
+                        Some of my hobbies are shopping, watching k-dramas/c-dramas, hiking, camping, anything outdoorsy really,
+                        and going on food adventures!
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-5 next">
+                <a href="#contact" class="col">
+                    <i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                       title="Contact"></i>
+                </a>
+            </div>
         </div>
-        <div class="row mx-auto">
-            <h5 class="display-5 mx-auto faded text-center">I don't bite.</h5>
-        </div>
-        <div class="row my-4 contacticon">
-            <a href="mailto:johndoe@gmail.com" class="col mx-3"><i class="fas fa-envelope-square"
-                    data-toggle="tooltip" data-placement="top" title="Email"></i></a>
-            <a href="https://www.linkedin.com/in/johndoe/" class="col mx-3"><i class="fab fa-linkedin"
-                    data-toggle="tooltip" data-placement="top" title="LinkedIn"></i></a>
-            <a href="https://github.com/johndoe" class="col mx-3"><i class="fab fa-github-square"
-                    data-toggle="tooltip" data-placement="top" title="Github"></i></a>
+        <div class="container landing d-flex justify-content-center flex-column align-items-center" id="contact">
+            <div class="row mx-auto">
+                <h4 class="display-4 font-weight-bold mx-auto text-center">Feel Like Reaching Out?</h4>
+            </div>
+            <div class="row mx-auto">
+                <h5 class="display-5 mx-auto faded text-center">I don't bite.</h5>
+            </div>
+            <div class="row my-4 contacticon">
+                <a href="mailto:tina.to@temple.edu" class="col mx-3">
+                    <i class="fas fa-envelope-square"
+                       data-toggle="tooltip" data-placement="top" title="Email"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/tinato1" class="col mx-3">
+                    <i class="fab fa-linkedin"
+                       data-toggle="tooltip" data-placement="top" title="LinkedIn"></i>
+                </a>
+                <a href="https://github.com/Tina-To" class="col mx-3">
+                    <i class="fab fa-github-square"
+                       data-toggle="tooltip" data-placement="top" title="Github"></i>
+                </a>
 
+            </div>
+            <div class="row mt-5">
+                <a href="#landing"><button type="button" class="btn btn-outline">Return to Top</button></a>
+            </div>
         </div>
-        <div class="row mt-5">
-            <a href="#landing"><button type="button" class="btn btn-outline">Return to Top</button></a>
-        </div>
-    </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-    </script>
-    <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-    </script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+                integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+                integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+        </script>
+        <script>
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
 </body>
 
 </html>
